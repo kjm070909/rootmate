@@ -1,0 +1,49 @@
+:root {
+  font-family:
+    'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #4f3c2d;
+  background:
+    radial-gradient(circle at top, rgba(255, 214, 180, 0.8), transparent 24%),
+    linear-gradient(180deg, #fff7f0 0%, #fffaf6 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(164, 77, 39, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(164, 77, 39, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, black 50%, transparent 90%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
